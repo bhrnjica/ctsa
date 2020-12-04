@@ -118,7 +118,7 @@ void errortests() {
     FILE *ifp;
 	double temp[1200];
 
-    ifp = fopen("../data/eusm.txt", "r");
+    ifp = fopen("../../data/eusm.txt", "r");
 	i = 0;
 	if (!ifp) {
 		printf("Cannot Open File");
@@ -539,7 +539,7 @@ void sunspotstest() {
 	double stats,crit;
 	double temp[3000];
 	double *x;
-    ifp = fopen("../data/sunspots.txt", "r");
+    ifp = fopen("../../data/sunspots.txt", "r");
 	int N;
 	int i;
 	const char *method = "aic";
@@ -795,7 +795,7 @@ void mstltest() {
 	FILE *ifp;
 	double temp[5000];
 	double *x;
-    ifp = fopen("../data/taylor.txt", "r");
+    ifp = fopen("../../data/taylor.txt", "r");
 	int N;
 	int i,j;
 
@@ -1302,7 +1302,7 @@ void arimatest() {
 	double temp[1200];
 	double temp2[1200];
 
-	ifp = fopen("../data/e6.dat", "r");
+	ifp = fopen("../../data/e6.dat", "r");
 	i = 0;
 	if (!ifp) {
 		printf("Cannot Open File");
@@ -1381,8 +1381,8 @@ void sarimatest() {
 	double temp[1200];
 	double temp2[1200];
 
-	ifp = fopen("../data/seriesG.txt", "r");
-	//ifp = fopen("../data/itdaily.txt", "r");
+	ifp = fopen("../../data/seriesG.txt", "r");
+	//ifp = fopen("../../data/itdaily.txt", "r");
 	i = 0;
 	if (!ifp) {
 		printf("Cannot Open File");
@@ -1464,7 +1464,7 @@ void sarimaxtest() {
 	double temp2[1200];
 	double temp3[1200];
 
-	ifp = fopen("../data/seriesB.txt", "r");
+	ifp = fopen("../../data/seriesB.txt", "r");
 	i = 0;
 	if (!ifp) {
 		printf("Cannot Open File");
@@ -1565,7 +1565,7 @@ void refittest() {
     double temp1[1200];
     double temp2[1200];
 
-	ifp = fopen("../data/seriesB.txt", "r");
+	ifp = fopen("../../data/seriesB.txt", "r");
 	i = 0;
 	if (!ifp) {
 		printf("Cannot Open File");
@@ -1677,7 +1677,7 @@ void autotest1() {
     double temp1[1200];
     double temp2[1200];
 
-	ifp = fopen("../data/seriesA.txt", "r");
+	ifp = fopen("../../data/seriesA.txt", "r");
 	i = 0;
 	if (!ifp) {
 		printf("Cannot Open File");
@@ -1771,7 +1771,7 @@ void autotest2() {
     double temp1[1200];
     double temp2[1200];
 
-	ifp = fopen("../data/wineind.txt", "r");
+	ifp = fopen("../../data/wineind.txt", "r");
 	i = 0;
 	if (!ifp) {
 		printf("Cannot Open File");
@@ -1865,7 +1865,7 @@ void autotest3() {
     double temp1[1200];
     double temp2[1200];
 
-	ifp = fopen("../data/seriesG.txt", "r");
+	ifp = fopen("../../data/seriesG.txt", "r");
 	i = 0;
 	if (!ifp) {
 		printf("Cannot Open File");
@@ -1968,7 +1968,7 @@ void myarimatest() {
     double temp1[1200];
     double temp2[1200];
 
-	ifp = fopen("../data/seriesB.txt", "r");
+	ifp = fopen("../../data/seriesB.txt", "r");
 	i = 0;
 	if (!ifp) {
 		printf("Cannot Open File");
@@ -2062,7 +2062,7 @@ void aa1test() {
     double temp1[1200];
     double temp2[1200];
 
-	ifp = fopen("../data/seriesB.txt", "r");
+	ifp = fopen("../../data/seriesB.txt", "r");
 	i = 0;
 	if (!ifp) {
 		printf("Cannot Open File");
@@ -2128,7 +2128,7 @@ void ndiffstest2() {
     double temp1[1200];
     double temp2[1200];
 
-	ifp = fopen("../data/seriesB.txt", "r");
+	ifp = fopen("../../data/seriesB.txt", "r");
 	i = 0;
 	if (!ifp) {
 		printf("Cannot Open File");
@@ -2178,7 +2178,7 @@ void searchtest() {
     double temp1[1200];
     double temp2[1200];
 
-	ifp = fopen("../data/seriesB.txt", "r");
+	ifp = fopen("../../data/seriesB.txt", "r");
 	i = 0;
 	if (!ifp) {
 		printf("Cannot Open File");

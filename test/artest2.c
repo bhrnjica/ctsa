@@ -30,7 +30,7 @@ int main(void) {
 	double temp[1200];
 	printf("OK");
 
-	ifp = fopen("../data/seriesA.txt", "r");
+	ifp = fopen("../../data/seriesA.txt", "r");
 	i = 0;
 	if (!ifp) {
 		printf("Cannot Open File");

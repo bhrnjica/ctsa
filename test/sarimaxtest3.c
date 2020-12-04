@@ -40,7 +40,7 @@ int main(void) {
     double temp1[1200];
     double temp2[1200];
 
-	ifp = fopen("../data/e1m.dat", "r");
+	ifp = fopen("../../data/e1m.dat", "r");
 	i = 0;
 	if (!ifp) {
 		printf("Cannot Open File");

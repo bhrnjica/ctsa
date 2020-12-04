@@ -24,7 +24,7 @@ int main(void) {
 	FILE *ifp;
 	double temp[2000];
 
-	ifp = fopen("../data/seriesA.txt", "r");
+	ifp = fopen("../../data/seriesA.txt", "r");
 	i = 0;
 	if (!ifp) {
 		printf("Cannot Open File");
