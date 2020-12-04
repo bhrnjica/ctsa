@@ -36,3 +36,7 @@ language.settings.xml
 *.stackdump
 
 
+/out/.vs/ctsa/v16
+/out/src/ctsalib.dir/Debug
+/out/x64/Debug
+/test/Debug

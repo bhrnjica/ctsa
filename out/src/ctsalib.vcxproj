@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{86F7EB15-8BE5-3AB7-8DE3-AF6246C71BE1}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ctsalib</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\sc\github\ctsa\out\Bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ctsalib.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ctsalib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\sc\github\ctsa\out\Bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ctsalib.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ctsalib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\sc\github\ctsa\out\Bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ctsalib.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ctsalib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\sc\github\ctsa\out\Bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ctsalib.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ctsalib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\sc\github\ctsa\include;C:\sc\github\ctsa\out\Bin;C:\sc\github\ctsa\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\sc\github\ctsa\include;C:\sc\github\ctsa\out\Bin;C:\sc\github\ctsa\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\sc\github\ctsa\include;C:\sc\github\ctsa\out\Bin;C:\sc\github\ctsa\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\sc\github\ctsa\include;C:\sc\github\ctsa\out\Bin;C:\sc\github\ctsa\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\sc\github\ctsa\include;C:\sc\github\ctsa\out\Bin;C:\sc\github\ctsa\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\sc\github\ctsa\include;C:\sc\github\ctsa\out\Bin;C:\sc\github\ctsa\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\sc\github\ctsa\include;C:\sc\github\ctsa\out\Bin;C:\sc\github\ctsa\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\sc\github\ctsa\include;C:\sc\github\ctsa\out\Bin;C:\sc\github\ctsa\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\sc\github\ctsa\include;C:\sc\github\ctsa\out\Bin;C:\sc\github\ctsa\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\sc\github\ctsa\include;C:\sc\github\ctsa\out\Bin;C:\sc\github\ctsa\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\sc\github\ctsa\include;C:\sc\github\ctsa\out\Bin;C:\sc\github\ctsa\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\sc\github\ctsa\include;C:\sc\github\ctsa\out\Bin;C:\sc\github\ctsa\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\sc\github\ctsa\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/sc/github/ctsa/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/sc/github/ctsa -BC:/sc/github/ctsa/out --check-stamp-file C:/sc/github/ctsa/out/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/sc/github/ctsa/src/CMakeLists.txt;C:\sc\github\ctsa\src\CMakeLists.txt;C:\sc\github\ctsa\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\sc\github\ctsa\out\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/sc/github/ctsa/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/sc/github/ctsa -BC:/sc/github/ctsa/out --check-stamp-file C:/sc/github/ctsa/out/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/sc/github/ctsa/src/CMakeLists.txt;C:\sc\github\ctsa\src\CMakeLists.txt;C:\sc\github\ctsa\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\sc\github\ctsa\out\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/sc/github/ctsa/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/sc/github/ctsa -BC:/sc/github/ctsa/out --check-stamp-file C:/sc/github/ctsa/out/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/sc/github/ctsa/src/CMakeLists.txt;C:\sc\github\ctsa\src\CMakeLists.txt;C:\sc\github\ctsa\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\sc\github\ctsa\out\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/sc/github/ctsa/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/sc/github/ctsa -BC:/sc/github/ctsa/out --check-stamp-file C:/sc/github/ctsa/out/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/sc/github/ctsa/src/CMakeLists.txt;C:\sc\github\ctsa\src\CMakeLists.txt;C:\sc\github\ctsa\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\sc\github\ctsa\out\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\sc\github\ctsa\src\autoutils.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\boxcox.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\boxjenkins.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\brent.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\conjgrad.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\conv.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\ctsa.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\dist.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\emle.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\erfunc.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\filter.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\hsfft.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\initest.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\lls.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\lnsrchmp.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\matrix.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\neldermead.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\newtonmin.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\nls.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\optimc.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\pdist.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\polyroot.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\pred.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\real.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\regression.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\secant.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\spectrum.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\stats.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\stl.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\talg.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\errors.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\unitroot.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\seastest.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\wtmath.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\wavefilt.c" />
+    <ClCompile Include="C:\sc\github\ctsa\src\wavelib.c" />
+    <ClInclude Include="C:\sc\github\ctsa\src\autoutils.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\boxcox.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\boxjenkins.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\brent.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\conjgrad.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\conv.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\ctsa.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\dist.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\emle.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\erfunc.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\filter.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\hsfft.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\initest.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\lls.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\lnsrchmp.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\matrix.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\neldermead.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\newtonmin.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\nls.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\optimc.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\pdist.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\polyroot.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\pred.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\real.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\regression.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\secant.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\spectrum.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\stats.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\stl.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\talg.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\errors.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\unitroot.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\seastest.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\wtmath.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\wavefilt.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\wavelib.h" />
+    <ClInclude Include="C:\sc\github\ctsa\src\waveletarima.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\sc\github\ctsa\out\ZERO_CHECK.vcxproj">
+      <Project>{0CD9A9D5-530F-3A21-A687-C7332F55B737}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
