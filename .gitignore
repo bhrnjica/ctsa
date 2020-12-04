@@ -41,3 +41,6 @@ language.settings.xml
 /out/x64/Debug
 /test/Debug
 /out/.vs
+/ctsadll_test/x64/Debug
+/ctsa_binding/x64/Debug
+/ctsadll_test/ctsadll_test.cpp
