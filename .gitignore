@@ -40,3 +40,4 @@ language.settings.xml
 /out/src/ctsalib.dir/Debug
 /out/x64/Debug
 /test/Debug
+/out/.vs
