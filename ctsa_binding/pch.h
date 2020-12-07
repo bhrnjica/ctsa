@@ -9,12 +9,15 @@
 
 // add headers that you want to pre-compile here
 #include "framework.h"
-#include "../header/ctsa.h"
-
+#include "../src/ctsa.h"
 
 #ifdef CTSABINDING_EXPORTS
 #define CTSABINDINGS_API __declspec(dllexport)
 #else
 #define CTSABINDINGS_API __declspec(dllimport)
 #endif
+
+
+
+
 #endif //PCH_H
